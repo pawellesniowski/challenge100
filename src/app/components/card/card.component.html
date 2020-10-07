@@ -1,0 +1,13 @@
+<section class="card">
+  <header class="card-header">
+    <i *ngIf="iconClasses" [class]="iconClasses"></i>
+    <h5>{{title}}</h5>
+    <h6>{{subTitle}}</h6>
+  </header>
+  <main class="card-body">
+    <ng-content select="[body]"></ng-content>
+  </main>
+  <footer class="card-footer">
+    <ng-content select="[footer]"></ng-content>
+  </footer>
+</section>

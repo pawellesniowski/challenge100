@@ -1,0 +1,18 @@
+@import "../../../styles/variables";
+
+
+.card {
+  &-header{
+    padding: 10px 0;
+    color: $white;
+    background-color: $angular-green;
+    display: flex;
+    * {
+     margin-right: 10px;
+    }
+  }
+
+  &-body, &-footer {
+    padding: 10px;
+  }
+}
