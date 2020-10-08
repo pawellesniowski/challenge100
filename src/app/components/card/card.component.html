@@ -4,10 +4,13 @@
     <h5>{{title}}</h5>
     <h6>{{subTitle}}</h6>
   </header>
-  <main class="card-body">
-    <ng-content select="[body]"></ng-content>
-  </main>
-  <footer class="card-footer">
-    <ng-content select="[footer]"></ng-content>
-  </footer>
+  <div class="content-container">
+    <div class="card-body">
+      <ng-content select="[body]"></ng-content>
+    </div>
+    <div class="card-footer">
+      <ng-content select="[footer]"></ng-content>
+    </div>
+  </div>
+
 </section>

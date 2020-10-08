@@ -1,0 +1,28 @@
+@import "../../../../styles/variables";
+
+.accordion-item {
+  margin-top: -1px;
+  padding: 8px 10px;
+  border: 1px solid $angular-green;
+
+  &__header {
+    display: flex;
+    flex-direction: row;
+
+    .icon {
+      margin-left: auto;
+      display: inline-block;
+      transition: all 0.3s;
+    }
+    .is-extended {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__content {
+    display: none;
+  }
+  .is_extended {
+    display: inline;
+  }
+}
