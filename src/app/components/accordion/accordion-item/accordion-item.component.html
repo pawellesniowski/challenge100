@@ -1,0 +1,10 @@
+<div class="accordion-item">
+  <div class="accordion-item__header">
+    <h4 class="title">{{ item.title }}</h4>
+    <div class="icon" (click)="toggleContent()" [class.is-extended]="item.isExtended">\/</div>
+  </div>
+
+  <div class="accordion-item__content" [class.is_extended]="item.isExtended">
+    <p>{{ item.content }}</p>
+  </div>
+</div>
