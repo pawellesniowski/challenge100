@@ -1,0 +1,12 @@
+<div class="progress-bar">
+  <small>{{progress}}</small>
+  <progress
+    [value]="progress"
+    max="100"
+    class="progress-bar__display"
+  ></progress>
+
+  <button (click)="increase()" class="increase-button">
+    increase
+  </button>
+</div>
