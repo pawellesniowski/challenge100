@@ -8,8 +8,21 @@ import { ProgressBarComponent } from './progress-bar/progress-bar.component';
 import { StarRatingComponent } from './star-rating/star-rating.component';
 
 @NgModule({
-  declarations: [ToolbarComponent, CardComponent, AccordionComponent, AccordionItemComponent, ProgressBarComponent, StarRatingComponent],
+  declarations: [
+    ToolbarComponent,
+    CardComponent,
+    AccordionComponent,
+    AccordionItemComponent,
+    ProgressBarComponent,
+    StarRatingComponent,
+  ],
   imports: [CommonModule],
-  exports: [ToolbarComponent, CardComponent, AccordionComponent, ProgressBarComponent],
+  exports: [
+    ToolbarComponent,
+    CardComponent,
+    AccordionComponent,
+    ProgressBarComponent,
+    StarRatingComponent,
+  ],
 })
 export class ComponentsModule {}
