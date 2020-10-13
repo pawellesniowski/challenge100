@@ -1,8 +1,10 @@
-<i class="fas fa-star"></i>
-<i class="fas fa-star"></i>
-<i class="fas fa-star"></i>
-<i class="fas fa-star-half-alt"></i>
-<i class="far fa-star"></i>
-
-
-
+<i
+  *ngFor="let star of rateStars"
+  [ngClass]="
+    star >= 1
+      ? 'fas fa-star'
+      : star > 0
+      ? 'fas fa-star-half-alt'
+      : 'far fa-star'
+  "
+></i>
