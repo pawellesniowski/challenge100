@@ -1,18 +1,9 @@
-<app-toolbar title="Angular 100 Challenge"></app-toolbar>
+<header>
+  <app-toolbar title="Angular 100 Challenge"></app-toolbar>
+</header>
+
+<main>
+  <router-outlet></router-outlet>
+</main>
 
 <app-top-of></app-top-of>
-
-<app-card title="Star Rating" subTitle="Components">
-  <app-star-rating body rate="3.5"></app-star-rating>
-</app-card>
-
-<app-card title="Progress Bar" subTitle="Components">
-  <app-progress-bar body [progress]="10"></app-progress-bar>
-</app-card>
-
-<app-accordion [items]="accordionItems"></app-accordion>
-
-<app-card title="Card" subTitle="Components">
-  <p body>Body Content</p>
-  <p footer>Footer Content</p>
-</app-card>

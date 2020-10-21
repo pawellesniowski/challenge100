@@ -10,6 +10,8 @@ import {
   CountClicksDirective,
   TopOfComponent,
 } from './top-of/top-of.component';
+import { ComponentsComponent } from './components.component';
+import { AppRoutingModule } from '../app-routing.module';
 
 @NgModule({
   declarations: [
@@ -21,16 +23,9 @@ import {
     StarRatingComponent,
     TopOfComponent,
     CountClicksDirective,
+    ComponentsComponent,
   ],
-  imports: [CommonModule],
-  exports: [
-    ToolbarComponent,
-    CardComponent,
-    AccordionComponent,
-    ProgressBarComponent,
-    StarRatingComponent,
-    TopOfComponent,
-    CountClicksDirective,
-  ],
+  imports: [CommonModule, AppRoutingModule],
+  exports: [ToolbarComponent, TopOfComponent],
 })
 export class ComponentsModule {}
