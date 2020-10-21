@@ -6,6 +6,10 @@ import { AccordionComponent } from './accordion/accordion.component';
 import { AccordionItemComponent } from './accordion/accordion-item/accordion-item.component';
 import { ProgressBarComponent } from './progress-bar/progress-bar.component';
 import { StarRatingComponent } from './star-rating/star-rating.component';
+import {
+  CountClicksDirective,
+  TopOfComponent,
+} from './top-of/top-of.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +19,8 @@ import { StarRatingComponent } from './star-rating/star-rating.component';
     AccordionItemComponent,
     ProgressBarComponent,
     StarRatingComponent,
+    TopOfComponent,
+    CountClicksDirective,
   ],
   imports: [CommonModule],
   exports: [
@@ -23,6 +29,8 @@ import { StarRatingComponent } from './star-rating/star-rating.component';
     AccordionComponent,
     ProgressBarComponent,
     StarRatingComponent,
+    TopOfComponent,
+    CountClicksDirective,
   ],
 })
 export class ComponentsModule {}
