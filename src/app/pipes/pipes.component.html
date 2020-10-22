@@ -1,5 +1,17 @@
-<app-card>
-  <h1 body>
+
+
+
+
+<app-card title="Card Card Formatter" subTitle="Pipe">
+  <div body>
+    <p>{{'11122223334444' | creditCardFormatter}}</p>
+    <p>{{'1234567891012345678910' | creditCardFormatter}}</p>
+    <p>{{'a1122223334444' | creditCardFormatter}}</p>
+  </div>
+</app-card>
+
+<app-card title="Truncate" subTitle="Pipe">
+  <h1 body >
     {{ 'this is string in the template' | truncate: 10 }}
   </h1>
 </app-card>
