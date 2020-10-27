@@ -1,0 +1,22 @@
+<div class="credit-card-input" [ngSwitch]="cardType">
+  <ng-template [ngSwitchCase]="cardTypes.VISA">
+    <i class="fab fa-cc-visa card-icon"></i>
+  </ng-template>
+
+  <ng-template [ngSwitchCase]="cardTypes.MASTER">
+    <i class="fab fa-cc-mastercard card-icon"></i>
+  </ng-template>
+
+  <ng-template ngSwitchDefault>
+    <i class="far fa-credit-card card-icon"></i>
+  </ng-template>
+
+  <label for="input-field"></label>
+  <input
+    id="input-field"
+    [(ngModel)]="creditCardNumber"
+    [readonly]="isReadOnly"
+    required
+    maxlength="16"
+  />
+</div>

@@ -1,3 +1,16 @@
+<app-card title="Credit Card Input" subTitle="Components">
+  <app-credit-cart-input
+    body
+    [creditCardNumber]="'4321432143214321'"
+    [isReadOnly]="true"
+  ></app-credit-cart-input>
+  <app-credit-cart-input
+    footer
+    [creditCardNumber]="'4321432143214321'"
+    [isReadOnly]="false"
+  ></app-credit-cart-input>
+</app-card>
+
 <app-card title="Star Rating" subTitle="Components">
   <app-star-rating body rate="3.5"></app-star-rating>
 </app-card>

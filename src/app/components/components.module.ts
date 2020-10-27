@@ -8,6 +8,8 @@ import { CountClicksDirective } from '../core/top-of/top-of.component';
 import { ComponentsComponent } from './components.component';
 import { RouterModule } from '@angular/router';
 import { CoreModule } from '../core/core.module';
+import { CreditCartInputComponent } from './credit-cart-input/credit-cart-input.component';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -17,6 +19,7 @@ import { CoreModule } from '../core/core.module';
     StarRatingComponent,
     CountClicksDirective,
     ComponentsComponent,
+    CreditCartInputComponent,
   ],
   imports: [
     CommonModule,
@@ -24,6 +27,7 @@ import { CoreModule } from '../core/core.module';
     RouterModule.forChild([
       { path: '', component: ComponentsComponent },
     ]),
+    FormsModule,
   ],
   exports: [],
 })
