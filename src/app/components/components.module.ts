@@ -10,6 +10,7 @@ import { RouterModule } from '@angular/router';
 import { CoreModule } from '../core/core.module';
 import { CreditCartInputComponent } from './credit-cart-input/credit-cart-input.component';
 import {FormsModule} from '@angular/forms';
+import { SpinnerComponent } from './spinner/spinner.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import {FormsModule} from '@angular/forms';
     CountClicksDirective,
     ComponentsComponent,
     CreditCartInputComponent,
+    SpinnerComponent,
   ],
   imports: [
     CommonModule,
