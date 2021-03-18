@@ -1,1 +1,6 @@
-<p>directives works!</p>
+<app-card title="directives" subTitle="debounce">
+  <div body>
+    <p>I was clicked {{noOfClicks}}</p>
+    <button appDebounce (debouncedEvent)='handleDebouncedClicks()'>Add Clicks</button>
+  </div>
+</app-card>

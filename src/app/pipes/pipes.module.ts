@@ -5,12 +5,14 @@ import { PipesComponent } from './pipes.component';
 import { CoreModule } from '../core/core.module';
 import { TruncatePipe } from './truncate/truncate.pipe';
 import { CreditCardFormatterPipe } from './credit-card-formatter/credit-card-formatter.pipe';
+import { FlattenArrPipe } from './flatten-arr.pipe';
 
 @NgModule({
   declarations: [
     PipesComponent,
     TruncatePipe,
     CreditCardFormatterPipe,
+    FlattenArrPipe,
   ],
   imports: [
     CommonModule,
@@ -19,5 +21,6 @@ import { CreditCardFormatterPipe } from './credit-card-formatter/credit-card-for
       { path: '', component: PipesComponent },
     ]),
   ],
+  providers: [FlattenArrPipe]
 })
 export class PipesModule {}
