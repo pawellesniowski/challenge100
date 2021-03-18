@@ -7,8 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DirectivesComponent implements OnInit {
   constructor() {}
+  noOfClicks: number = 0;
 
   ngOnInit(): void {
     console.log('DirectivesComponent loaded');
+  }
+
+  handleDebouncedClicks() {
+    this.noOfClicks++;
   }
 }
