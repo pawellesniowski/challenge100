@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Loaders } from '../../models/models';
 
 @Component({
   selector: 'app-spinner',
@@ -7,6 +8,10 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class SpinnerComponent implements OnInit {
   @Input() isLoading = false;
+  @Input() loaderLook: Loaders = Loaders.loadingDots;
+
+  loaders = Loaders;
+
   constructor() {}
 
   ngOnInit(): void {}
