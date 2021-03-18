@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Loaders } from '../models/models';
+
 
 @Component({
   selector: 'app-components',
@@ -6,6 +8,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./components.component.scss'],
 })
 export class ComponentsComponent {
+  loaders = Loaders;
+
   public accordionItems = [
     {
       title: 'Example 1',

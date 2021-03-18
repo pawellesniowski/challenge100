@@ -11,6 +11,7 @@ import { CoreModule } from '../core/core.module';
 import { CreditCartInputComponent } from './credit-cart-input/credit-cart-input.component';
 import {FormsModule} from '@angular/forms';
 import { SpinnerComponent } from './spinner/spinner.component';
+import { LoadingDotsComponent } from './loading-dots/loading-dots.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { SpinnerComponent } from './spinner/spinner.component';
     ComponentsComponent,
     CreditCartInputComponent,
     SpinnerComponent,
+    LoadingDotsComponent,
   ],
   imports: [
     CommonModule,

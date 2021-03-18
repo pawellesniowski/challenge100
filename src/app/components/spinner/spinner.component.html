@@ -1,3 +1,6 @@
-<div class="overlay" [style.display]="isLoading ? 'flex' : 'none'">
-  <div class="loader"></div>
+<div class="overlay" [style.display]="isLoading ? 'flex' : 'none'" >
+  <ng-container [ngSwitch]='loaderLook'>
+    <div *ngSwitchCase='loaders.spinner' class="loader"></div>
+    <app-loading-dots *ngSwitchDefault></app-loading-dots>
+  </ng-container>
 </div>
