@@ -1,3 +1,8 @@
+<app-card title="Filter" subTitle='Pipe'>
+  <div body>
+    {{["Hello", "Kot", "Hello world", "Hel", "Ala ma kota"] | filter: "kot"}}
+  </div>
+</app-card>
 
 <app-card title="flatten arr">
   <div body>
@@ -5,8 +10,6 @@
     <button (click)='modyfyArray()'>modify</button>
   </div>
 </app-card>
-
-
 
 <app-card title="Card Card Formatter" subTitle="Pipe">
   <div body>
