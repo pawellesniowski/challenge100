@@ -1,0 +1,36 @@
+.toggle-box {
+  background-color: grey;
+  display: inline-block;
+  width: 50px;
+  height: 20px;
+  border: 2px solid black;
+  border-radius: 10px;
+  transition: background-color .5s;
+  position: relative;
+
+  &__switch {
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    transform: translateY(-50%);
+    right: 67%;
+
+    background-color: black;
+    width: 14px;
+    height: 14px;
+    border-radius: 50px;
+    transition: all 1s;
+  }
+
+  .switch-on {
+    background-color: red;
+    left: initial;
+    right: 3%;
+  }
+}
+
+.toggle-on {
+  background-color: greenyellow;
+}
+
+

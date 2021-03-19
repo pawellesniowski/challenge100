@@ -13,6 +13,7 @@ import {FormsModule} from '@angular/forms';
 import { SpinnerComponent } from './spinner/spinner.component';
 import { LoadingDotsComponent } from './loading-dots/loading-dots.component';
 import { TwitterPostComponent } from './twitter-post/twitter-post.component';
+import { ToggleButtonComponent } from './toggle-button/toggle-button.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { TwitterPostComponent } from './twitter-post/twitter-post.component';
     SpinnerComponent,
     LoadingDotsComponent,
     TwitterPostComponent,
+    ToggleButtonComponent,
   ],
   imports: [
     CommonModule,
