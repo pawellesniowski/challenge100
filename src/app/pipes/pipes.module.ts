@@ -6,6 +6,7 @@ import { CoreModule } from '../core/core.module';
 import { TruncatePipe } from './truncate/truncate.pipe';
 import { CreditCardFormatterPipe } from './credit-card-formatter/credit-card-formatter.pipe';
 import { FlattenArrPipe } from './flatten-arr.pipe';
+import { FilterPipe } from './filter.pipe';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { FlattenArrPipe } from './flatten-arr.pipe';
     TruncatePipe,
     CreditCardFormatterPipe,
     FlattenArrPipe,
+    FilterPipe,
   ],
   imports: [
     CommonModule,
