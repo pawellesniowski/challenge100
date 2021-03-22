@@ -1,1 +1,8 @@
-<p>other works!</p>
+<change-detection-todo-item
+  [placeholder]='placeholder'
+  (toggle)="handleToggle()"
+  [todos]='todos'
+></change-detection-todo-item>
+
+
+<button (click)='toggleCompleatedParent()'>toggleCompleatedParent</button>

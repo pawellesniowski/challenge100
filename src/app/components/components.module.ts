@@ -14,6 +14,7 @@ import { SpinnerComponent } from './spinner/spinner.component';
 import { LoadingDotsComponent } from './loading-dots/loading-dots.component';
 import { TwitterPostComponent } from './twitter-post/twitter-post.component';
 import { ToggleButtonComponent } from './toggle-button/toggle-button.component';
+import { DebounceSearchComponent } from './debounce-search/debounce-search.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { ToggleButtonComponent } from './toggle-button/toggle-button.component';
     LoadingDotsComponent,
     TwitterPostComponent,
     ToggleButtonComponent,
+    DebounceSearchComponent,
   ],
   imports: [
     CommonModule,
